@@ -33,6 +33,11 @@
 #   to a sensible default depending on your operating system, like 'php-' or
 #   'php5-'.
 #
+# [*config_root_ini*]
+#   This is the path to the php ini files. This defaults to a sensible default 
+#   depending on your operating system but may need to be 
+#   overridden occasionally.
+#
 class php (
   $ensure         = $::php::params::ensure,
   $manage_repos   = $::php::params::manage_repos,
