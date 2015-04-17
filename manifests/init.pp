@@ -45,6 +45,7 @@ class php (
   $extensions     = {},
   $settings       = {},
   $package_prefix = $::php::params::package_prefix,
+  $config_root_ini = $::php::params::config_root_ini,
 ) inherits ::php::params {
 
   validate_string($ensure)

@@ -125,7 +125,7 @@ define php::extension(
   }
 
   ::php::config { $title:
-    file   => "${::php::params::config_root_ini}/${lowercase_title}.ini",
+    file   => "${::php::config_root_ini}/${lowercase_title}.ini",
     config => $real_settings,
   }
 
